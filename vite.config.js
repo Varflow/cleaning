@@ -26,7 +26,7 @@ htmlToEntries();
 export default {
   root: "src",
   build: {
-    emptyOutDir: OUT_DIR,
+    outDir: OUT_DIR,
     rollupOptions: {
       input: {
         main: resolve(__dirname, ROOT_PAGE),
