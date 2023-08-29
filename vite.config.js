@@ -25,6 +25,7 @@ htmlToEntries();
 
 export default {
   root: "src",
+  publicDir: resolve(__dirname, "./public"),
   build: {
     outDir: OUT_DIR,
     rollupOptions: {
