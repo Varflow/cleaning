@@ -1,3 +1,30 @@
+@import "./grid.css";
+@import "./fonts";
+@import "./vars";
+
+// ------------------------
+// Mixins
+// ------------------------
+
+@import "./mixins/font-size";
+
+// ------------------------
+// Components
+// ------------------------
+
+@import "./components/header";
+@import "./components/button";
+@import "./components/section";
+@import "./components/guaranted";
+@import "./components/services";
+@import "./components/subscribe";
+@import "./components/additional-service";
+@import "./components/steps";
+@import "./components/reviews";
+@import "./components/results";
+@import "./components/contacts";
+@import "./components/footer";
+
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,48 @@
+.section-subscribe {
+  background-color: $primary-100;
+
+  .subscribe-form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1vw;
+
+    border-radius: 8px;
+    background: $white;
+
+    padding: 52px 33px;
+
+    .text-field {
+      display: flex;
+      flex: 1 1 auto;
+
+      padding: 20px;
+
+      border: none;
+      border-radius: 8px;
+      background: $gray-100;
+
+      font-family: $montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 145%; /* 26.1px */
+      letter-spacing: 0.18px;
+      color: $gray-700;
+
+      &::placeholder {
+        font-family: $montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 145%; /* 26.1px */
+        letter-spacing: 0.18px;
+        color: $gray-700;
+      }
+    }
+
+    .button {
+      min-width: 25%;
+    }
+  }
+}

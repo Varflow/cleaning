@@ -1,0 +1,41 @@
+.section-guaranted {
+  .guaranted-row {
+    margin-top: 60px;
+  }
+
+  .guaranted-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+
+    padding: 0 2.5vw;
+
+    img {
+      width: 110px;
+      height: 110px;
+
+      object-fit: cover;
+    }
+
+    &__title {
+      font-family: $noto;
+      font-size: fontSizeToVW(32px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 44.8px */
+      letter-spacing: 0.32px;
+      color: $gray-900;
+    }
+
+    &__text {
+      text-align: center;
+      font-family: $noto;
+      font-size: fontSizeToVW(22px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 33.6px */
+      color: $gray-900;
+    }
+  }
+}

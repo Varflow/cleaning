@@ -8,13 +8,585 @@
   </head>
   <body>
     <div id="app">
-      <div
-        class="div"
-        data-changeable="true"
-        data-category="Підтримуюче прибирання"
-        data-service="до 50 м2"
-      ></div>
+      <!-- Header Start -->
+      <header class="header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-1">
+              <a href="/" class="header-logo">
+                <img src="/images/logo.png" alt="Lucky Cleaning" />
+              </a>
+            </div>
+            <div class="col-lg-10 offset-1">
+              <nav class="header-menu">
+                <a href="/" class="header-menu__item">ПРИБИРАННЯ</a>
+                <a href="/" class="header-menu__item">ХІМЧИСТКА</a>
+                <a href="/" class="header-menu__item">МИТТЯ ВІКОН</a>
+                <a href="/" class="header-menu__item">ВАКАНСІЇ</a>
+                <a href="/" class="header-menu__item">ФРАНШИЗА</a>
+                <a href="/" class="header-menu__item">КОНТАКТИ</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <header class="header header-dublicated" data-el="header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-1">
+              <a href="/" class="header-logo">
+                <img src="/images/logo.png" alt="Lucky Cleaning" />
+              </a>
+            </div>
+            <div class="col-lg-10 offset-1">
+              <nav class="header-menu">
+                <a href="/" class="header-menu__item">ПРИБИРАННЯ</a>
+                <a href="/" class="header-menu__item">ХІМЧИСТКА</a>
+                <a href="/" class="header-menu__item">МИТТЯ ВІКОН</a>
+                <a href="/" class="header-menu__item">ВАКАНСІЇ</a>
+                <a href="/" class="header-menu__item">ФРАНШИЗА</a>
+                <a href="/" class="header-menu__item">КОНТАКТИ</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Header End -->
+
+      <section class="header-promo">
+        <div class="container">
+          <div class="header-promo__image">
+            <img src="/images/header-promo.jpeg" alt="" />
+          </div>
+          <div class="container">
+            <div class="col-8">
+              <div class="header-promo__info">
+                <h1 class="header-promo__title">
+                  Клінінг, який робить вас — щасливішими.
+                </h1>
+                <button class="button button-lg">ЗАЛИШИТИ ЗАЯВКУ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section section-guaranted" data-el="sticky-header-start">
+        <div class="container">
+          <h2 class="section-title">МИ ГАРАНТУЄМО</h2>
+
+          <div class="row justify-content-between guaranted-row">
+            <div class="col-12 col-lg-4 guaranted-item">
+              <img src="/icons/quality.png" alt="Quality" />
+              <h3 class="guaranted-item__title">Кваліфікацію персоналу</h3>
+              <p class="guaranted-item__text">
+                Ретельно підбираємо, перевіряємо, навчаємо і розвиваємо людей, з
+                якими працюємо
+              </p>
+            </div>
+            <div class="col-12 col-lg-4 guaranted-item">
+              <img src="/icons/window-cleaner.png" alt="Quality" />
+              <h3 class="guaranted-item__title">Екологічно чисті засоби</h3>
+              <p class="guaranted-item__text">
+                Гіпоалергенні, безпечні для дітей і домашніх тварин миючі засоби
+              </p>
+            </div>
+            <div class="col-12 col-lg-4 guaranted-item">
+              <img src="/icons/money.png" alt="Quality" />
+              <h3 class="guaranted-item__title">Збереження майна</h3>
+              <p class="guaranted-item__text">
+                Контролюємо свій персонал і гарантуємо збереження вашого майна.
+                Відшкодуємо будь-які завдані збитки
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-services">
+        <div class="container">
+          <h2 class="section-title">ПОСЛУГИ ТА ЦІНИ</h2>
+
+          <div class="row services-row">
+            <div class="col-6 service-item">
+              <div class="service-item__image">
+                <img src="/images/services/service-1.png" alt="" />
+              </div>
+              <div class="service-item__content">
+                <h2 class="service-item__title">Підтримуюче прибирання</h2>
+                <p class="service-item__text">
+                  Легкий вид прибирання, який здійснюється на постійній основі.
+                </p>
+                <p class="service-item__text">
+                  В рамках підтримуючого прибирання видаляємо пил і побутові
+                  забруднення зі всіх горизонтальних поверхонь в квартирі,
+                  пилососимо і миємо підлогу, чистимо сантехніку і ванну, миємо
+                  кухонні поверхні, очищаємо фартух і плиту зовні, пилососимо
+                  меблі і килими.
+                </p>
+                <div class="service-item__footer">
+                  <button class="button">Детальніше</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 service-item">
+              <div class="service-item__image">
+                <img src="/images/services/service-2.png" alt="" />
+              </div>
+              <div class="service-item__content">
+                <h2 class="service-item__title">Базове прибирання</h2>
+                <p class="service-item__text">
+                  Ретельне прибирання всього помешкання, умовно говорячи - на
+                  рівні зросту співробітника.
+                </p>
+                <p class="service-item__text">
+                  В рамках базового прибирання видаляємо пил і побутові
+                  забруднення зі всіх горизонтальних поверхонь в квартирі,
+                  пилососимо і миємо підлогу, чистимо сантехніку і ванну, миємо
+                  кухонні поверхні, очищаємо фартух і плиту зовні, пилососимо
+                  меблі і килими.
+                </p>
+                <div class="service-item__footer">
+                  <button class="button">Детальніше</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 service-item">
+              <div class="service-item__image">
+                <img src="/images/services/service-3.png" alt="" />
+              </div>
+              <div class="service-item__content">
+                <h2 class="service-item__title">Генеральне прибирання</h2>
+                <p class="service-item__text">
+                  Глибоке очищення і відновлення.
+                </p>
+                <p class="service-item__text">
+                  При генеральному прибиранні робимо все те, що робимо при
+                  стандартному, а також: рухаємо меблі і миємо в важкодоступних
+                  місцях, працюємо із застарілими плямами, відмиваємо
+                  холодильник, духовку та іншу побутову техніку зсередини, миємо
+                  двері, знепилюємо стіни, чистимо плитку парогенератором і т.д.
+                </p>
+                <div class="service-item__footer">
+                  <button class="button">Детальніше</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 service-item">
+              <div class="service-item__image">
+                <img src="/images/services/service-4.png" alt="" />
+              </div>
+              <div class="service-item__content">
+                <h2 class="service-item__title">Прибирання після ремонту</h2>
+                <p class="service-item__text">
+                  Повне комплексне прибирання з обладнанням і миючими засобами
+                </p>
+                <p class="service-item__text">
+                  Прибирання після ремонту включає повне видалення будівельного
+                  пилу, а також слідів фарби, затирання, скотча, клею, монтажної
+                  піни та інших будівельних забруднень. Чистці піддаються
+                  абсолютно всі поверхні і всі предмети інтер'єру в приміщенні
+                  включаючи, стіни, підлогу і стелю, меблі всередині та зовні.
+                </p>
+                <div class="service-item__footer">
+                  <button class="button">Детальніше</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section section-subscribe">
+        <div class="container">
+          <div class="col-12 subscribe-form-wrapper">
+            <input
+              type="text"
+              name="name"
+              placeholder="Ім’я"
+              class="text-field"
+            />
+            <input
+              type="tel"
+              name="name"
+              placeholder="Телефон"
+              class="text-field"
+            />
+            <button class="button button-sm">Замовити</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-additional-services">
+        <div class="container">
+          <h2 class="section-title">ДОДАТКОВІ ПОСЛУГИ</h2>
+
+          <div class="row additional-services-row">
+            <div class="col-12 col-lg-3 additional-service-item">
+              <div class="additional-service-item__image">
+                <img
+                  src="/images/additional-services/additional-service-1.png"
+                  alt=""
+                />
+              </div>
+              <div class="additional-service-item__content">
+                <div class="additional-service-item__info">
+                  <h3 class="additional-service-item__title">
+                    Хімчистка меблів
+                  </h3>
+                  <a href="/" class="additional-service-item__link"
+                    >Дізнатися більше</a
+                  >
+                </div>
+                <button class="button">Замовити</button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 additional-service-item">
+              <div class="additional-service-item__image">
+                <img
+                  src="/images/additional-services/additional-service-2.png"
+                  alt=""
+                />
+              </div>
+              <div class="additional-service-item__content">
+                <div class="additional-service-item__info">
+                  <h3 class="additional-service-item__title">Миття вікон</h3>
+                  <a href="/" class="additional-service-item__link"
+                    >Дізнатися більше</a
+                  >
+                </div>
+                <button class="button">Замовити</button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 additional-service-item">
+              <div class="additional-service-item__image">
+                <img
+                  src="/images/additional-services/additional-service-3.png"
+                  alt=""
+                />
+              </div>
+              <div class="additional-service-item__content">
+                <div class="additional-service-item__info">
+                  <h3 class="additional-service-item__title">
+                    Локальне прибирання
+                  </h3>
+                  <a href="/" class="additional-service-item__link"
+                    >Дізнатися більше</a
+                  >
+                </div>
+                <button class="button">Замовити</button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 additional-service-item">
+              <div class="additional-service-item__image">
+                <img
+                  src="/images/additional-services/additional-service-4.png"
+                  alt=""
+                />
+              </div>
+              <div class="additional-service-item__content">
+                <div class="additional-service-item__info">
+                  <h3 class="additional-service-item__title">
+                    Персональний помічник
+                  </h3>
+                  <a href="/" class="additional-service-item__link"
+                    >Дізнатися більше</a
+                  >
+                </div>
+                <button class="button">Замовити</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-steps">
+        <div class="container">
+          <h2 class="section-title">ЯК МИ ПРАЦЮЄМО</h2>
+          <div class="steps-row">
+            <div class="step-item">
+              <div class="step-item__header">
+                <h2 class="step-item__title">Крок 1</h2>
+                <h3 class="step-item__subtitle">Заявка на прибирання</h3>
+              </div>
+              <p class="step-item__text">
+                Просто зателефонуйте нам або залиште заявку на прибирання
+              </p>
+            </div>
+            <div class="step-item">
+              <div class="step-item__header">
+                <h2 class="step-item__title">Крок 2</h2>
+                <h3 class="step-item__subtitle">Дзвінок менеджера</h3>
+              </div>
+              <p class="step-item__text">
+                Зв'яжемося з вами, дізнаємося деталі і дамо попередню оцінку за
+                вартістю і терміном виконання робіт
+              </p>
+            </div>
+            <div class="step-item">
+              <div class="step-item__header">
+                <h2 class="step-item__title">Крок 3</h2>
+                <h3 class="step-item__subtitle">Договір</h3>
+              </div>
+              <p class="step-item__text">Підпишемо договір публічної оферти</p>
+            </div>
+            <div class="step-item">
+              <div class="step-item__header">
+                <h2 class="step-item__title">Крок 4</h2>
+                <h3 class="step-item__subtitle">Виконання робіт</h3>
+              </div>
+              <p class="step-item__text">
+                Наші фахівці приступлять до роботи протягом 2 годин з моменту
+                подачі заявки
+              </p>
+            </div>
+            <div class="step-item">
+              <div class="step-item__header">
+                <h2 class="step-item__title">Крок 5</h2>
+                <h3 class="step-item__subtitle">Приймання та оплата</h3>
+              </div>
+              <p class="step-item__text">
+                Ви приймете роботу і тільки після цього оплатите наші послуги
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-reviews">
+        <h2 class="section-title">Що <i>кажуть</i> наші клієнти</h2>
+
+        <div class="swiper slider-reviews">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="/images/reviews/review-1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/reviews/review-4.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/reviews/review-3.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/reviews/review-4.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/reviews/review-1.png" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-navigation">
+            <div class="button-prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+              >
+                <path
+                  d="M39.9998 67.2008C24.9598 67.2008 12.7998 55.0408 12.7998 40.0008C12.7998 24.9608 24.9598 12.8008 39.9998 12.8008C55.0398 12.8008 67.1998 24.9608 67.1998 40.0008C67.1998 55.0408 55.0398 67.2008 39.9998 67.2008ZM39.9998 16.0008C26.7198 16.0008 15.9998 26.7208 15.9998 40.0008C15.9998 53.2808 26.7198 64.0008 39.9998 64.0008C53.2798 64.0008 63.9998 53.2808 63.9998 40.0008C63.9998 26.7208 53.2798 16.0008 39.9998 16.0008Z"
+                  fill="white"
+                />
+                <path
+                  d="M40.48 55.5205L24.96 40.0005L40.48 24.4805L42.72 26.7205L29.44 40.0005L42.72 53.2805L40.48 55.5205Z"
+                  fill="white"
+                />
+                <path
+                  d="M27.2002 38.4004H54.4002V41.6004H27.2002V38.4004Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="button-next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+              >
+                <path
+                  d="M40.0002 67.2008C55.0402 67.2008 67.2002 55.0408 67.2002 40.0008C67.2002 24.9608 55.0402 12.8008 40.0002 12.8008C24.9602 12.8008 12.8002 24.9608 12.8002 40.0008C12.8002 55.0408 24.9602 67.2008 40.0002 67.2008ZM40.0002 16.0008C53.2802 16.0008 64.0002 26.7208 64.0002 40.0008C64.0002 53.2808 53.2802 64.0008 40.0002 64.0008C26.7202 64.0008 16.0002 53.2808 16.0002 40.0008C16.0002 26.7208 26.7202 16.0008 40.0002 16.0008Z"
+                  fill="white"
+                />
+                <path
+                  d="M39.52 55.5205L55.04 40.0005L39.52 24.4805L37.28 26.7205L50.56 40.0005L37.28 53.2805L39.52 55.5205Z"
+                  fill="white"
+                />
+                <path
+                  d="M52.7998 38.4004H25.5998V41.6004H52.7998V38.4004Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-results">
+        <h2 class="section-title">РЕЗУЛЬТАТИ НАШОЇ РОБОТИ</h2>
+
+        <div class="swiper slider-results">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="/images/results/result-1.png" alt="" />
+              <img src="/images/results/result-2.png" alt="" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="/images/results/result-3.png" alt="" />
+              <img src="/images/results/result-4.png" alt="" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="/images/results/result-1.png" alt="" />
+              <img src="/images/results/result-2.png" alt="" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="/images/results/result-3.png" alt="" />
+              <img src="/images/results/result-4.png" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-navigation">
+            <div class="button-prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+              >
+                <path
+                  d="M39.9998 67.2008C24.9598 67.2008 12.7998 55.0408 12.7998 40.0008C12.7998 24.9608 24.9598 12.8008 39.9998 12.8008C55.0398 12.8008 67.1998 24.9608 67.1998 40.0008C67.1998 55.0408 55.0398 67.2008 39.9998 67.2008ZM39.9998 16.0008C26.7198 16.0008 15.9998 26.7208 15.9998 40.0008C15.9998 53.2808 26.7198 64.0008 39.9998 64.0008C53.2798 64.0008 63.9998 53.2808 63.9998 40.0008C63.9998 26.7208 53.2798 16.0008 39.9998 16.0008Z"
+                  fill="#76A4DB"
+                />
+                <path
+                  d="M40.48 55.5205L24.96 40.0005L40.48 24.4805L42.72 26.7205L29.44 40.0005L42.72 53.2805L40.48 55.5205Z"
+                  fill="#76A4DB"
+                />
+                <path
+                  d="M27.2002 38.4004H54.4002V41.6004H27.2002V38.4004Z"
+                  fill="#76A4DB"
+                />
+              </svg>
+            </div>
+            <div class="button-next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+              >
+                <path
+                  d="M40.0002 67.2008C55.0402 67.2008 67.2002 55.0408 67.2002 40.0008C67.2002 24.9608 55.0402 12.8008 40.0002 12.8008C24.9602 12.8008 12.8002 24.9608 12.8002 40.0008C12.8002 55.0408 24.9602 67.2008 40.0002 67.2008ZM40.0002 16.0008C53.2802 16.0008 64.0002 26.7208 64.0002 40.0008C64.0002 53.2808 53.2802 64.0008 40.0002 64.0008C26.7202 64.0008 16.0002 53.2808 16.0002 40.0008C16.0002 26.7208 26.7202 16.0008 40.0002 16.0008Z"
+                  fill="#76A4DB"
+                />
+                <path
+                  d="M39.52 55.5205L55.04 40.0005L39.52 24.4805L37.28 26.7205L50.56 40.0005L37.28 53.2805L39.52 55.5205Z"
+                  fill="#76A4DB"
+                />
+                <path
+                  d="M52.7998 38.4004H25.5998V41.6004H52.7998V38.4004Z"
+                  fill="#76A4DB"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contacts">
+        <div class="container">
+          <h2 class="section-title">КОНТАКТИ</h2>
+          <div class="row justify-content-between">
+            <div class="col-12 col-lg-3 contact-address">
+              <img src="/icons/pin.png" alt="" />
+              <h4 class="address-value">м. Вінниця</h4>
+            </div>
+            <div class="col-12 col-lg-3 contacts-phone">
+              <div class="contact-item">
+                <img src="/icons/call.png" alt="" />
+                <a href="tel:+38 (068) 46-44-144" class="contact-item__value"
+                  >+38 (068) 46-44-144</a
+                >
+              </div>
+              <div class="contact-item">
+                <img src="/icons/email.png" alt="" />
+                <a
+                  href="mailto:luckycleaning.vn@gmail.com"
+                  class="contact-item__value"
+                  >luckycleaning.vn@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 contact-socials">
+              <div class="contact-socials__row">
+                <a href="https://instagram.com">
+                  <img src="/icons/instagram.png" alt="" />
+                </a>
+                <a href="https://facebook.com">
+                  <img src="/icons/facebook.png" alt="" />
+                </a>
+                <a href="https://telegram.com">
+                  <img src="/icons/telegram.png" alt="" />
+                </a>
+                <a href="https://tik-tok.com">
+                  <img src="/icons/tik-tok.png" alt="" />
+                </a>
+              </div>
+              <h4 class="contact-socials__title">Ми також є тут!</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-lg-1">
+              <a href="/" class="footer-logo">
+                <img src="/images/logo.png" alt="Lucky Cleaning" />
+              </a>
+            </div>
+            <div class="col-12 col-lg-9 offset-1 footer-menu">
+              <div class="footer-links">
+                <a href="/" class="footer-links__item">Послуги</a>
+                <a href="/" class="footer-links__item"
+                  >Підтримуюче прибирання</a
+                >
+                <a href="/" class="footer-links__item">Базове прибирання</a>
+                <a href="/" class="footer-links__item">Генеральне прибирання</a>
+                <a href="/" class="footer-links__item"
+                  >Прибирання після ремонту</a
+                >
+              </div>
+              <div class="footer-links">
+                <a href="/" class="footer-links__item">Хімчистка меблів</a>
+                <a href="/" class="footer-links__item">Миття вікон</a>
+                <a href="/" class="footer-links__item">Локальне прибирання</a>
+                <a href="/" class="footer-links__item">Персональний помічник</a>
+              </div>
+              <div class="footer-links">
+                <a href="/" class="footer-links__item">Вакансії</a>
+                <a href="/" class="footer-links__item">Франшиза</a>
+                <a href="/" class="footer-links__item">Контакти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/pages/home.js"></script>
   </body>
 </html>
