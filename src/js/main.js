@@ -1,4 +1,4 @@
-import "../styles/general.scss";
+import "../styles/_general.scss";
 
 import { render } from "./render";
 import { createStickyHeader } from "./components/header";

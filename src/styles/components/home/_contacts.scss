@@ -17,7 +17,7 @@
 
     .address-value {
       font-family: $montserrat;
-      font-size: fontSizeToVW(24px);
+      font-size: fontSizeToVW(20px);
       font-style: normal;
       font-weight: 400;
       line-height: 140%; /* 33.6px */
@@ -37,13 +37,13 @@
       column-gap: 24px;
 
       img {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
       }
 
       &__value {
         font-family: $montserrat;
-        font-size: fontSizeToVW(24px);
+        font-size: fontSizeToVW(20px);
         font-style: normal;
         font-weight: 400;
         line-height: 140%; /* 33.6px */
@@ -62,21 +62,21 @@
     &__row {
       display: flex;
       align-items: center;
-      column-gap: 50px;
+      column-gap: 30px;
 
       margin-bottom: 48px;
     }
 
     a {
       img {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
       }
     }
 
     &__title {
       font-family: $montserrat;
-      font-size: 24px;
+      font-size: fontSizeToVW(20px);
       font-style: normal;
       font-weight: 400;
       line-height: 140%; /* 33.6px */

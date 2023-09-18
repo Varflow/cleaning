@@ -4,6 +4,7 @@
   }
 
   .service-item {
+    height: 1000px;
     padding: 0 0.5vw;
     margin-bottom: 5vh;
 
@@ -21,12 +22,21 @@
       border-bottom-left-radius: 74px;
 
       transition: border-radius 0.5s ease;
+
+      img {
+        width: 100%;
+      }
     }
 
     &__content {
       position: relative;
+      height: 540px;
 
-      padding: 20px 40px 40px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      padding: 30px 40px 40px 40px;
 
       &::before {
         content: "";
@@ -45,7 +55,7 @@
 
     &__title {
       font-family: $noto;
-      font-size: fontSizeToVW(32px);
+      font-size: fontSizeToVW(28px);
       font-style: normal;
       font-weight: 400;
       line-height: 140%; /* 44.8px */
@@ -57,7 +67,7 @@
 
     &__text {
       font-family: $noto;
-      font-size: fontSizeToVW(24px);
+      font-size: fontSizeToVW(20px);
       font-style: normal;
       font-weight: 400;
       line-height: 140%; /* 33.6px */
@@ -73,6 +83,10 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+
+      a {
+        text-decoration: none;
+      }
     }
   }
 }

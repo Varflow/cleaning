@@ -1,0 +1,16 @@
+@import "../fonts";
+@import "../vars";
+@import "../mixins/font-size.scss";
+
+// ------------------------
+// Components
+// ------------------------
+
+@import "../components/home/guaranted";
+@import "../components/home/services";
+@import "../components/home/subscribe";
+@import "../components/home/additional-service";
+@import "../components/home/steps";
+@import "../components/home/reviews";
+@import "../components/home/results";
+@import "../components/home/contacts";

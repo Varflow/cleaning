@@ -6,7 +6,7 @@
   width: 100%;
   padding: 28px 0;
 
-  background-color: rgba($primary-200, 20%);
+  background-color: rgba(154, 189, 229, 0.7);
 
   &-dublicated {
     position: fixed;
@@ -36,7 +36,7 @@
 
     &__item {
       font-family: $montserrat;
-      font-size: fontSizeToVW(18px);
+      font-size: fontSizeToVW(23px);
       font-style: normal;
       font-weight: 500;
       line-height: 130%; /* 29.9px */
@@ -97,7 +97,7 @@
   }
 
   &__info {
-    padding-top: 25vh;
+    padding-top: 30vh;
 
     .button {
       margin-top: 10vh;
@@ -106,7 +106,7 @@
 
   &__title {
     font-family: $noto;
-    font-size: fontSizeToVW(96px);
+    font-size: fontSizeToVW(80px);
     font-style: italic;
     font-weight: 400;
     line-height: 140%; /* 134.4px */

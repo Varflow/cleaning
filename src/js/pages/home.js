@@ -41,3 +41,5 @@ const main = () => {
 };
 
 main();
+
+import "../../styles/pages/home.scss";

@@ -1,0 +1,35 @@
+.section-info {
+  .info-item {
+    padding: 0 2vw;
+    &__title {
+      font-family: $noto;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 50.4px */
+      letter-spacing: 0.36px;
+      color: $noto;
+
+      margin-bottom: 32px;
+    }
+
+    &__list {
+      &-value {
+        font-family: $noto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 33.6px */
+        letter-spacing: 0.24px;
+        color: $gray-900;
+
+        margin-bottom: 4px;
+
+        &::marker {
+          color: $primary-200;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
