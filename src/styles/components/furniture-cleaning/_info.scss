@@ -1,7 +1,6 @@
 .section-info {
   position: relative;
 
-  margin-top: 100px;
   padding-bottom: 64px;
 
   &__bg {
@@ -17,9 +16,5 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-
-  .info-text-row {
-    margin-top: 80px;
   }
 }

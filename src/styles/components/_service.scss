@@ -1,0 +1,248 @@
+.service-promo {
+  width: 100%;
+
+  position: relative;
+
+  .container,
+  .row {
+    height: 100%;
+  }
+
+  .row {
+    justify-content: flex-end;
+  }
+
+  &-bg {
+    width: 100%;
+
+    position: absolute;
+    top: 11.8vh;
+    left: 0;
+    z-index: -1;
+
+    background-position: 100% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    height: 100%;
+
+    padding-top: 55vh;
+  }
+
+  &__header {
+    max-width: 59%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__subtitle {
+    font-family: $noto;
+    font-size: fontSizeToVW(24px);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.24px;
+    color: $gray-900;
+
+    // max-width: 55%;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    font-family: $noto;
+    font-size: fontSizeToVW(24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 0.24px;
+
+    color: $gray-900;
+
+    margin-bottom: 48px;
+  }
+}
+
+// Блок со списком
+
+.info-item {
+  padding: 0 2vw;
+  &__title {
+    font-family: $noto;
+    font-size: fontSizeToVW(36px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 50.4px */
+    letter-spacing: 0.36px;
+    color: $noto;
+
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    &-value {
+      font-family: $noto;
+      font-size: fontSizeToVW(24px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 33.6px */
+      letter-spacing: 0.24px;
+      color: $gray-900;
+
+      margin-bottom: 4px;
+
+      &::marker {
+        color: $primary-200;
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+.info-text-row {
+  text-align: right;
+
+  .info-text {
+    font-family: $noto;
+    font-size: fontSizeToVW(24px);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.24px;
+
+    margin-bottom: 24px;
+  }
+}
+
+// Блок с ценами
+
+.prices-table {
+  border-collapse: collapse;
+  &-keys {
+    td {
+      padding-bottom: 18px;
+      padding-left: 27px;
+      padding-right: 27px;
+
+      border-right: 2px solid $primary-200;
+      border-bottom: 2px solid $primary-200;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  &-values {
+    td {
+      padding-top: 18px;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      border-right: 2px solid $primary-200;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  &-key {
+    padding: 10px;
+    background-color: $primary-50;
+    border-radius: 8px;
+
+    font-family: $noto;
+    font-size: fontSizeToVW(24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 44.8px */
+    letter-spacing: 0.32px;
+  }
+
+  &-value {
+    font-family: $noto;
+    font-size: fontSizeToVW(24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 42px */
+    letter-spacing: 0.3px;
+  }
+}
+
+.price-info {
+  padding-top: 32px;
+  &-text {
+    font-family: $noto;
+    font-size: fontSizeToVW(24px);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.24px;
+
+    margin-bottom: 22px;
+  }
+}
+
+// Блок Додаткові послуги
+
+.service-key {
+  font-family: Noto Serif Display;
+  font-size: fontSizeToVW(28px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 44.8px */
+  letter-spacing: 0.32px;
+  color: $dark;
+  padding: 10px 0;
+
+  border-bottom: 2px solid $primary-200;
+}
+
+.service-value {
+  font-family: Noto Serif Display;
+  font-size: fontSizeToVW(28px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 44.8px */
+  letter-spacing: 0.32px;
+  color: $dark;
+  padding: 10px 0;
+  padding-left: 100px;
+
+  border-left: 2px solid $primary-200;
+  border-bottom: 2px solid $primary-200;
+}
+
+.service-image {
+  text-align: center;
+  padding-left: 44px;
+  border-left: 2px solid $primary-200;
+  border-bottom: 2px solid $primary-200;
+}
+
+.services__list {
+  padding-bottom: 100px;
+  .row:last-child {
+    .service-key,
+    .service-value,
+    .service-image {
+      border-bottom: none;
+    }
+  }
+}
+
+// Блок с кнопкой
+
+.services-action {
+  padding-bottom: 100px;
+  .button {
+    width: 100%;
+  }
+}
