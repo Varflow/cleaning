@@ -1,5 +1,8 @@
 @import "../fonts";
 @import "../vars";
+@import "../mixins/font-size.scss";
 
 @import "../components/maintance-cleaning/promo";
 @import "../components/maintance-cleaning/info";
+@import "../components/maintance-cleaning/prices";
+@import "../components/maintance-cleaning/services";

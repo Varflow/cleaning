@@ -8,14 +8,8 @@
     padding: 0 0.5vw;
     margin-bottom: 5vh;
 
-    // &:hover {
-    //   .service-item__image {
-    //     border-top-right-radius: 0;
-    //     border-bottom-left-radius: 0;
-    //   }
-    // }
-
     &__image {
+      height: 480px;
       z-index: 1;
       overflow: hidden;
       border-top-right-radius: 74px;
