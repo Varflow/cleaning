@@ -66,6 +66,9 @@
     color: $gray-900;
 
     margin-bottom: 48px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
