@@ -1,0 +1,24 @@
+.section-info {
+  position: relative;
+
+  padding-bottom: 64px;
+  padding-top: 100px;
+
+  .info-row {
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    background-image: url("/images/bg/maintance-cleaning-bg-second.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
