@@ -1,0 +1,23 @@
+@import "../fonts";
+@import "../vars";
+@import "../mixins/font-size.scss";
+@import "../components/service";
+
+@import "../components/furniture-cleaning/promo";
+@import "../components/furniture-cleaning/prices";
+@import "../components/furniture-cleaning/services";
+
+.text-bg{
+  display: flex;
+  align-self: flex-start;
+  font-family: Noto Serif Display;
+  border-radius: 8px;
+  background-color: #E4EFF9;
+  color: #272529;
+  padding: 10px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+}

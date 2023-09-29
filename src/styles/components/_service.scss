@@ -127,6 +127,9 @@
 
 .prices-table {
   border-collapse: collapse;
+  &-position{display: flex;
+    justify-content: center;
+  }
   &-keys {
     td {
       padding-bottom: 18px;
