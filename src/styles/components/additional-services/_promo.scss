@@ -3,10 +3,6 @@
     height: 80vh;
   }
 
-  // .service-promo__info {
-  //   padding-bottom: 0;
-  // }
-
   .section-title {
     font-family: $noto;
     font-size: fontSizeToVW(48px);
@@ -34,11 +30,11 @@
     background-size: cover;
   }
 }
-.accent{
+.accent {
   text-decoration: underline;
 }
 
-.service-promo-text-block{
+.service-promo-text-block {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
