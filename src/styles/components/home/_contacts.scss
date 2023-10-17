@@ -1,18 +1,36 @@
 .section-contacts {
   .section-title {
     margin-bottom: 100px;
+
+    @include tablet {
+      margin-bottom: 50px;
+    }
   }
 
   .contact-address {
     display: flex;
     flex-direction: column;
-
     align-items: center;
+
+    @include mobile {
+      flex-direction: row;
+      align-items: center;
+      column-gap: 24px;
+      margin-bottom: 14px;
+    }
+
     img {
       width: 100px;
       height: 100px;
 
       margin-bottom: 33px;
+
+      @include mobile {
+        width: 40px;
+        height: 40px;
+
+        margin-bottom: 0;
+      }
     }
 
     .address-value {
@@ -23,6 +41,10 @@
       line-height: 140%; /* 33.6px */
       letter-spacing: 0.24px;
       color: $gray-900;
+
+      @include mobile {
+        font-size: fontSizeToVW(80px);
+      }
     }
   }
 
@@ -30,6 +52,10 @@
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+
+    @include mobile {
+      row-gap: 10px;
+    }
 
     .contact-item {
       display: flex;
@@ -50,6 +76,14 @@
         letter-spacing: 0.24px;
         color: $gray-900;
         text-decoration: none;
+
+        @include tablet {
+          font-size: fontSizeToVW(24px);
+        }
+
+        @include mobile {
+          font-size: fontSizeToVW(74px);
+        }
       }
     }
   }
@@ -65,6 +99,11 @@
       column-gap: 30px;
 
       margin-bottom: 48px;
+
+      @include mobile {
+        margin-top: 28px;
+        margin-bottom: 14px;
+      }
     }
 
     a {
@@ -83,6 +122,10 @@
       letter-spacing: 0.24px;
       color: $gray-900;
       text-align: center;
+
+      @include mobile {
+        font-size: fontSizeToVW(80px);
+      }
     }
   }
 }

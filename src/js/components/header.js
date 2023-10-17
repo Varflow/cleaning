@@ -1,8 +1,13 @@
 export const createStickyHeader = () => {
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  if (isMobile) {
+    return;
+  }
+
   const header = document.querySelector('[data-el="header"]');
   const offsetTop = 200;
 
-  console.log(offsetTop);
   // Set a threshold value based on your design
   window.addEventListener("scroll", () => {
     const x = window.pageYOffset;

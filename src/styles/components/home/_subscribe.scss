@@ -7,10 +7,19 @@
     justify-content: space-between;
     column-gap: 1vw;
 
+    @include mobile {
+      flex-direction: column;
+      row-gap: 8px;
+    }
+
     border-radius: 8px;
     background: $white;
 
     padding: 52px 33px;
+
+    @include mobile {
+      padding: 33px;
+    }
 
     .text-field {
       display: flex;
@@ -30,6 +39,15 @@
       letter-spacing: 0.18px;
       color: $gray-700;
 
+      @include tablet {
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+
       &::placeholder {
         font-family: $montserrat;
         font-size: 18px;
@@ -38,11 +56,19 @@
         line-height: 145%; /* 26.1px */
         letter-spacing: 0.18px;
         color: $gray-700;
+
+        @include tablet {
+          font-size: 14px;
+        }
       }
     }
 
     .button {
       min-width: 25%;
+
+      @include mobile {
+        min-width: 100%;
+      }
     }
   }
 }

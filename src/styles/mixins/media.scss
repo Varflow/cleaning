@@ -1,0 +1,35 @@
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin descktop {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin desctopSM {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin fullHD {
+  @media (min-width: 1680px) {
+    @content;
+  }
+}
+
+@mixin canHover {
+  @media (hover: hover) {
+    @content;
+  }
+}
