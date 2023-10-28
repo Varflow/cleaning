@@ -1,0 +1,27 @@
+.section-promo {
+  .service-promo-bg {
+    height: 80vh;
+
+    @include tablet {
+      height: 35vh;
+    }
+
+    @include mobile {
+      height: 25vh;
+    }
+  }
+
+  &__bottom-bg {
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

@@ -1,6 +1,14 @@
 .section-reviews {
   background-color: $primary-200;
 
+  .swiper-slide {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
   .section-title {
     color: $white;
 

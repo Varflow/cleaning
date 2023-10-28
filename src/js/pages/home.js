@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -11,11 +11,22 @@ const createReviewsSlider = () => {
   const nextEl = target.querySelector(".button-next");
 
   new Swiper(target, {
-    slidesPerView: 3.2,
-    modules: [Navigation],
+    slidesPerView: 1,
+    spaceBetween: 14,
+    modules: [Navigation, Autoplay],
+    autoplay: true,
+    speed: 1000,
     navigation: {
       prevEl,
       nextEl,
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 2,
+      },
     },
   });
 };
@@ -26,8 +37,10 @@ const createResultsSlider = () => {
   const nextEl = target.querySelector(".button-next");
 
   new Swiper(target, {
-    slidesPerView: 2,
-    modules: [Navigation],
+    slidesPerView: 1,
+    modules: [Navigation, Autoplay],
+    autoplay: true,
+    speed: 1500,
     navigation: {
       prevEl,
       nextEl,

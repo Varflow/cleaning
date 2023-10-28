@@ -1,23 +1,10 @@
 .section-promo {
   .service-promo-bg {
     height: 85vh;
-  }
 
-  // .service-promo__info {
-  //   padding-bottom: 0;
-  // }
-
-  .section-title {
-    font-family: $noto;
-    font-size: fontSizeToVW(48px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 67.2px */
-    letter-spacing: 0.48px;
-    color: $gray-900;
-    text-align: right;
-
-    margin-bottom: 42px;
+    @include mobile {
+      height: 35vh;
+    }
   }
 
   &__bottom-bg {

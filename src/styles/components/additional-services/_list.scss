@@ -1,6 +1,10 @@
-.list-section{
+.list-section {
 }
 .list {
+  @include mobile {
+    margin-inline-start: 24px;
+  }
+
   &--value {
     font-family: $noto;
     font-size: fontSizeToVW(24px);
@@ -15,9 +19,17 @@
     &::marker {
       color: $primary-200;
       font-size: 32px;
+
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+
+    @include mobile {
+      font-size: fontSizeToVW(56px);
     }
   }
-  &--price{
+  &--price {
     text-decoration: underline;
   }
 }

@@ -1,7 +1,7 @@
 export const createStickyHeader = () => {
-  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const canSticky = window.matchMedia("(max-width: 1024px)").matches;
 
-  if (isMobile) {
+  if (canSticky) {
     return;
   }
 
@@ -12,7 +12,6 @@ export const createStickyHeader = () => {
   window.addEventListener("scroll", () => {
     const x = window.pageYOffset;
 
-    console.log(x);
     if (x >= offsetTop) {
       // Add a CSS class to make the header sticky
       header.style.top = "0";
