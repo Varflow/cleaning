@@ -1,23 +1,10 @@
 .section-promo {
   .service-promo-bg {
     height: 82vh;
-  }
 
-  // .service-promo__info {
-  //   padding-bottom: 0;
-  // }
-
-  .section-title {
-    font-family: $noto;
-    font-size: fontSizeToVW(48px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 67.2px */
-    letter-spacing: 0.48px;
-    color: $gray-900;
-    text-align: right;
-
-    margin-bottom: 42px;
+    @include mobile {
+      height: 28vh;
+    }
   }
 
   &__bottom-bg {
@@ -46,6 +33,12 @@
     align-items: center;
 
     padding-bottom: 80px;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 16px;
+      padding-top: 30px;
+    }
   }
 
   .schedule {
@@ -60,6 +53,10 @@
     line-height: 150%; /* 36px */
     letter-spacing: 0.24px;
     color: $gray-900;
+
+    @include mobile {
+      font-size: fontSizeToVW(48px);
+    }
   }
 
   .details-text {
@@ -71,5 +68,15 @@
     letter-spacing: 0.36px;
 
     color: $gray-900;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  .service-promo__text {
+    @include mobile {
+      margin-bottom: 8px;
+    }
   }
 }

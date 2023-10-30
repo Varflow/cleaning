@@ -8,16 +8,48 @@ export const createStickyHeader = () => {
   const header = document.querySelector('[data-el="header"]');
   const offsetTop = 200;
 
-  // Set a threshold value based on your design
   window.addEventListener("scroll", () => {
     const x = window.pageYOffset;
 
     if (x >= offsetTop) {
-      // Add a CSS class to make the header sticky
       header.style.top = "0";
     } else {
-      // Remove the sticky class if the user scrolls back up
       header.style.top = "-100%";
     }
+  });
+};
+
+export const createMobileHeader = () => {
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  if (!isMobile) {
+    return;
+  }
+
+  const headerMenuEl = document.querySelector('[data-el="header-mobile-menu"]');
+  const closeHeaderMenuEl = document.querySelector(
+    '[data-el="header-menu-close"]'
+  );
+  const openHeaderMenuEl = document.querySelector(
+    '[data-el="header-menu-burger"]'
+  );
+
+  const headerMenuDropdownButtonEl = document.querySelector(
+    '[data-el="header-menu-dropdown-button"]'
+  );
+  const headerMenuDropdownEl = document.querySelector(
+    '[data-el="header-menu-dropdown"]'
+  );
+
+  headerMenuDropdownButtonEl.addEventListener("click", (event) => {
+    headerMenuDropdownButtonEl.classList.toggle("opened");
+  });
+
+  openHeaderMenuEl.addEventListener("click", (event) => {
+    headerMenuEl.classList.add("opened");
+  });
+
+  closeHeaderMenuEl.addEventListener("click", () => {
+    headerMenuEl.classList.remove("opened");
   });
 };
