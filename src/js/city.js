@@ -4,7 +4,7 @@ import { Modal } from "./modal";
 export const initCity = () => {
   const city = getCity();
 
-  if (!city && !city.length) {
+  if (!city && !city?.length) {
     Modal.open("city-modal");
     listenCityClick();
   }
