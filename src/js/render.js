@@ -32,10 +32,19 @@ const renderValue = (elements) => {
   elements.forEach((element) => {
     const category = element.dataset.category;
     const service = element.dataset.service;
+    const attr = element.dataset.attr;
+    const attrType = element.dataset.attrType;
+    const changeChild = JSON.parse(element.dataset.changeChild || "true");
 
     const value = getServiceValue(city, category, service);
 
-    element.innerText = value;
+    if (attr) {
+      element.setAttribute(attr, `${attrType}${value}`);
+    }
+
+    if (changeChild) {
+      element.innerText = value;
+    }
   });
 };
 

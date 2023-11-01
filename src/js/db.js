@@ -94,6 +94,14 @@ export const services = {
     "Персональний помічник": {
       "Ціна такої послуги": "350 грн / год",
     },
+    Contacts: {
+      Email: "luckycleaningkyiv@gmail.com",
+      Instagram:
+        "https://instagram.com/lucky_cleaning.kyiv?igshid=OGQ5ZDc2ODk2ZA==",
+      TikTok: "https://www.tiktok.com/@lucky_cleaning.vn?_t=8fDtyXdBUGs",
+      Facebook: "https://www.facebook.com/profile.php?id=100067292997034",
+      Telegram: "t.me/LuckyCleaning_bot",
+    },
   },
   Vinitsa: {
     "Підтримуюче прибирання": {
@@ -187,6 +195,14 @@ export const services = {
     },
     "Персональний помічник": {
       "Ціна такої послуги": "350 грн / год",
+    },
+    Contacts: {
+      Email: "luckycleaning.vn21@gmail.com",
+      Instagram:
+        "https://instagram.com/lucky_cleaning.vn?igshid=OGQ5ZDc2ODk2ZA==",
+      TikTok: "https://www.tiktok.com/@lucky_cleaning.vn?_t=8fDtyXdBUGs",
+      Facebook: "https://www.facebook.com/profile.php?id=100067292997034",
+      Telegram: "t.me/LuckyCleaning_bot",
     },
   },
 };

@@ -41,6 +41,7 @@ const createResultsSlider = () => {
     modules: [Navigation, Autoplay],
     autoplay: true,
     speed: 1500,
+    centeredSlides: true,
     navigation: {
       prevEl,
       nextEl,
