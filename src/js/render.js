@@ -39,7 +39,7 @@ const renderValue = (elements) => {
     const value = getServiceValue(city, category, service);
 
     if (attr) {
-      element.setAttribute(attr, `${attrType}${value}`);
+      element.setAttribute(attr, attrType ? `${attrType}${value}` : value);
     }
 
     if (changeChild) {
