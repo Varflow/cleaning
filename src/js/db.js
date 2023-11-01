@@ -100,7 +100,7 @@ export const services = {
         "https://instagram.com/lucky_cleaning.kyiv?igshid=OGQ5ZDc2ODk2ZA==",
       TikTok: "https://www.tiktok.com/@lucky_cleaning.vn?_t=8fDtyXdBUGs",
       Facebook: "https://www.facebook.com/profile.php?id=100067292997034",
-      Telegram: "t.me/LuckyCleaning_bot",
+      Telegram: "https://t.me/LuckyCleaning_bot",
     },
   },
   Vinitsa: {
@@ -202,7 +202,7 @@ export const services = {
         "https://instagram.com/lucky_cleaning.vn?igshid=OGQ5ZDc2ODk2ZA==",
       TikTok: "https://www.tiktok.com/@lucky_cleaning.vn?_t=8fDtyXdBUGs",
       Facebook: "https://www.facebook.com/profile.php?id=100067292997034",
-      Telegram: "t.me/LuckyCleaning_bot",
+      Telegram: "https://t.me/LuckyCleaning_bot",
     },
   },
 };
