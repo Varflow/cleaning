@@ -204,11 +204,19 @@
 .prices-table {
   width: 100%;
   display: flex;
-  overflow-x: auto;
+  justify-content: center;
+
   border-collapse: collapse;
 
-  &::-webkit-scrollbar {
-    display: none;
+  tbody {
+    @include mobile {
+      width: 100%;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 
   &-position {
