@@ -14,7 +14,9 @@ const createReviewsSlider = () => {
     slidesPerView: 1,
     spaceBetween: 14,
     modules: [Navigation, Autoplay],
-    autoplay: true,
+    autoplay: {
+      delay: 10000,
+    },
     speed: 1000,
     navigation: {
       prevEl,
@@ -39,7 +41,10 @@ const createResultsSlider = () => {
   new Swiper(target, {
     slidesPerView: 1,
     modules: [Navigation, Autoplay],
-    autoplay: true,
+    autoplay: {
+      delay: 10000,
+    },
+
     speed: 1500,
     centeredSlides: true,
     navigation: {
