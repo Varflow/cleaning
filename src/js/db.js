@@ -92,7 +92,7 @@ export const services = {
       "Миття вікон від пилу зсередини": "від 80 грн/м2",
     },
     "Персональний помічник": {
-      "Ціна такої послуги": "350 грн / год",
+      "Ціна такої послуги": "550 грн/год",
     },
     Contacts: {
       Email: "luckycleaningkyiv@gmail.com",
@@ -101,6 +101,7 @@ export const services = {
       TikTok: "https://www.tiktok.com/@lucky_cleaning.vn?_t=8fDtyXdBUGs",
       Facebook: "https://www.facebook.com/profile.php?id=100067292997034",
       Telegram: "https://t.me/LuckyCleaning_bot",
+      Phone: "+380 (67) 192 92 12",
     },
   },
   Vinitsa: {
@@ -194,7 +195,7 @@ export const services = {
       "Миття вікон від пилу зсередини": "від 80 грн/м2",
     },
     "Персональний помічник": {
-      "Ціна такої послуги": "350 грн / год",
+      "Ціна такої послуги": "450 грн/год",
     },
     Contacts: {
       Email: "luckycleaning.vn21@gmail.com",
@@ -203,6 +204,7 @@ export const services = {
       TikTok: "https://www.tiktok.com/@lucky_cleaning.vn?_t=8fDtyXdBUGs",
       Facebook: "https://www.facebook.com/profile.php?id=100067292997034",
       Telegram: "https://t.me/LuckyCleaning_bot",
+      Phone: "+38 (068) 46 44 144",
     },
   },
 };
