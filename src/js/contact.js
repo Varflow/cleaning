@@ -1,3 +1,4 @@
+import { sendMail } from "./email";
 import { Modal } from "./modal";
 
 export const initContact = () => {
@@ -26,6 +27,12 @@ const initContactFormInModal = () => {
   contactFormEl.addEventListener("submit", (event) => {
     event.stopPropagation();
     event.preventDefault();
+
+    const name = document.querySelector('[data-el="name"]');
+    const phone = document.querySelector('[data-el="phone"]');
+    const comment = document.querySelector('[data-el="comment"]');
+
+    sendMail({ name, phone, comment });
   });
 };
 
