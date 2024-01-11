@@ -72,6 +72,11 @@
     @include mobile {
       font-size: 18px;
     }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
   }
 
   .service-promo__text {

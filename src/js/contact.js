@@ -1,4 +1,3 @@
-import { sendMail } from "./email";
 import { Modal } from "./modal";
 
 export const initContact = () => {
@@ -10,43 +9,15 @@ export const initContact = () => {
       event.stopPropagation();
 
       Modal.open("contact-modal");
+
+      // const submitButton = document.querySelector('[data-el="submit-button"]');
+
+      // submitButton.addEventListener("click", () => {
+      //   const form = document.querySelector('[data-el="contact-form"]');
+
+      //   gtag_report_conversion();
+      //   form.submit();
+      // });
     });
-  });
-
-  initContactFormInModal();
-  initContactInSection();
-};
-
-const initContactFormInModal = () => {
-  const contactFormEl = document.querySelector('[data-el="contact-form"]');
-
-  if (!contactFormEl) {
-    return;
-  }
-
-  contactFormEl.addEventListener("submit", (event) => {
-    event.stopPropagation();
-    event.preventDefault();
-
-    const name = document.querySelector('[data-el="name"]');
-    const phone = document.querySelector('[data-el="phone"]');
-    const comment = document.querySelector('[data-el="comment"]');
-
-    sendMail({ name, phone, comment });
-  });
-};
-
-const initContactInSection = () => {
-  const contactFormEl = document.querySelector(
-    '[data-el="contact-form-section"]'
-  );
-
-  if (!contactFormEl) {
-    return;
-  }
-
-  contactFormEl.addEventListener("submit", (event) => {
-    event.stopPropagation();
-    event.preventDefault();
   });
 };

@@ -96,6 +96,8 @@ export const services = {
     },
     Contacts: {
       Email: "luckycleaningkyiv@gmail.com",
+      Email_From: "luckycleaningkyiv@gmail.com",
+      Email_To: "Stamik85@gmail.com",
       Instagram:
         "https://instagram.com/lucky_cleaning.kyiv?igshid=OGQ5ZDc2ODk2ZA==",
       TikTok: "https://www.tiktok.com/@lucky_cleaning.vn?_t=8fDtyXdBUGs",
@@ -199,6 +201,8 @@ export const services = {
     },
     Contacts: {
       Email: "luckycleaning.vn21@gmail.com",
+      Email_From: "luckycleaning.vn21@gmail.com",
+      Email_To: "kovalvikusik20@gmail.com",
       Instagram:
         "https://instagram.com/lucky_cleaning.vn?igshid=OGQ5ZDc2ODk2ZA==",
       TikTok: "https://www.tiktok.com/@lucky_cleaning.vn?_t=8fDtyXdBUGs",

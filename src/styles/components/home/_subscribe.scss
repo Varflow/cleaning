@@ -1,6 +1,11 @@
 .section-subscribe {
   background-color: $primary-100;
 
+  .subscribe-form-wrapper:invalid > #submit-button {
+    pointer-events: none;
+    background-color: rgba(154, 154, 154, 0.6);
+  }
+
   .subscribe-form-wrapper {
     display: flex;
     align-items: center;

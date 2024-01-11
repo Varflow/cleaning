@@ -30,6 +30,49 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+
+    <meta
+      name="facebook-domain-verification"
+      content="wmij0cso0f9cb2wvab9zwcwvo5ea8c"
+    />
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "345631388280058");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <!-- <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=345631388280058&ev=PageView&noscript=1"
+      /> -->
+    </noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <div id="app">
@@ -363,10 +406,31 @@
       <section class="section section-subscribe">
         <div class="container">
           <form
-            action="#"
+            action="send_mail.php"
+            method="POST"
             class="col-12 subscribe-form-wrapper"
             data-el="contact-form-section"
           >
+            <input
+              type="hidden"
+              name="from"
+              value=""
+              data-changeable="true"
+              data-category="Contacts"
+              data-service="Email_From"
+              data-attr="value"
+              data-attr-type=""
+            />
+            <input
+              type="hidden"
+              name="to"
+              value=""
+              data-changeable="true"
+              data-category="Contacts"
+              data-service="Email_To"
+              data-attr="value"
+              data-attr-type=""
+            />
             <input
               type="text"
               name="name"
@@ -378,8 +442,11 @@
               name="name"
               placeholder="Телефон"
               class="text-field"
+              required
             />
-            <button class="button button-sm" type="submit">Замовити</button>
+            <button class="button button-sm" id="submit-button" type="submit">
+              Замовити
+            </button>
           </form>
         </div>
       </section>
@@ -936,23 +1003,57 @@
           aria-labelledby="contact-modal-title"
         >
           <main class="modal__content" id="contact-modal-content">
-            <h2 class="contact-modal__title">ЗАЛИШИТИ ЗАЯКУ</h2>
-            <form action="#" class="contact-modal__form" data-el="contact-form">
+            <h2 class="contact-modal__title">ЗАЛИШИТИ ЗАЯВКУ</h2>
+            <form
+              action="send_mail.php"
+              class="contact-modal__form"
+              data-el="contact-form"
+            >
+              <input
+                type="hidden"
+                name="from"
+                value=""
+                data-changeable="true"
+                data-category="Contacts"
+                data-service="Email_From"
+                data-attr="value"
+                data-attr-type=""
+              />
+              <input
+                type="hidden"
+                name="to"
+                value=""
+                data-changeable="true"
+                data-category="Contacts"
+                data-service="Email_To"
+                data-attr="value"
+                data-attr-type=""
+              />
               <input
                 type="text"
+                name="name"
                 class="contact-modal__form-input"
                 placeholder="Ім’я"
               />
               <input
                 type="tel"
+                name="phone"
                 class="contact-modal__form-input"
                 placeholder="Телефон"
+                required
               />
               <textarea
                 class="contact-modal__form-input contact-modal__form-textarea"
                 placeholder="Коментар"
+                name="comment"
               ></textarea>
-              <button class="button button-sm">Підтвердити</button>
+              <button
+                class="button button-sm"
+                id="submit-button"
+                data-el="submit-button"
+              >
+                Підтвердити
+              </button>
             </form>
           </main>
         </div>

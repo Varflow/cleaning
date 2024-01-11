@@ -30,6 +30,21 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11434598489"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-11434598489");
+    </script>
   </head>
   <body>
     <div id="app">
@@ -613,21 +628,49 @@
           aria-labelledby="contact-modal-title"
         >
           <main class="modal__content" id="contact-modal-content">
-            <h2 class="contact-modal__title">ЗАЛИШИТИ ЗАЯКУ</h2>
-            <form action="#" class="contact-modal__form" data-el="contact-form">
+            <h2 class="contact-modal__title">ЗАЛИШИТИ ЗАЯВКУ</h2>
+            <form
+              action="send_mail.php"
+              class="contact-modal__form"
+              data-el="contact-form"
+            >
+              <input
+                type="hidden"
+                name="from"
+                value=""
+                data-changeable="true"
+                data-category="Contacts"
+                data-service="Email_From"
+                data-attr="value"
+                data-attr-type=""
+              />
+              <input
+                type="hidden"
+                name="to"
+                value=""
+                data-changeable="true"
+                data-category="Contacts"
+                data-service="Email_To"
+                data-attr="value"
+                data-attr-type=""
+              />
               <input
                 type="text"
+                name="name"
                 class="contact-modal__form-input"
                 placeholder="Ім’я"
               />
               <input
                 type="tel"
+                name="phone"
                 class="contact-modal__form-input"
                 placeholder="Телефон"
+                required
               />
               <textarea
                 class="contact-modal__form-input contact-modal__form-textarea"
                 placeholder="Коментар"
+                name="comment"
               ></textarea>
               <button class="button button-sm">Підтвердити</button>
             </form>

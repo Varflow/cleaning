@@ -128,6 +128,10 @@
     margin-bottom: 48px;
   }
 
+  &__form:invalid > #submit-button {
+    pointer-events: none;
+    background-color: rgba(154, 154, 154, 0.6);
+  }
   &__form {
     display: flex;
     flex-direction: column;
