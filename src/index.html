@@ -73,8 +73,34 @@
       /> -->
     </noscript>
     <!-- End Meta Pixel Code -->
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MJGFHW5L");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MJGFHW5L"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="app">
       <!-- Header Start -->
       <header class="header">
@@ -406,7 +432,7 @@
       <section class="section section-subscribe">
         <div class="container">
           <form
-            action="send_mail.php"
+            action="/send_mail.php"
             method="POST"
             class="col-12 subscribe-form-wrapper"
             data-el="contact-form-section"
@@ -1005,7 +1031,7 @@
           <main class="modal__content" id="contact-modal-content">
             <h2 class="contact-modal__title">ЗАЛИШИТИ ЗАЯВКУ</h2>
             <form
-              action="send_mail.php"
+              action="/send_mail.php"
               class="contact-modal__form"
               data-el="contact-form"
             >

@@ -15,6 +15,7 @@
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "imask": "^7.3.0",
+    "mailtrap": "^3.3.0",
     "micromodal": "^0.4.10",
     "swiper": "^10.2.0"
   }
