@@ -30,22 +30,36 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-11434598489"
-    ></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MJGFHW5L");
+    </script>
+
+    <!-- End Google Tag Manager -->
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-11434598489");
     </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MJGFHW5L"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="app">
       <!-- Header Start -->
       <header class="header">
@@ -234,23 +248,54 @@
                   Повне комплексне прибирання з обладнанням і миючими засобами.
                 </h3>
               </div>
-              <p class="service-promo__text">
+              <p
+                class="service-promo__text"
+                data-changeable="true"
+                data-category="Прибирання після ремонту"
+                data-service="Text1"
+              >
                 Прибирання після ремонту включає повне видалення будівельного
                 пилу, а також слідів фарби, затирання, скотча, клею, монтажної
                 піни та інших будівельних забруднень. Чистці піддаються
                 абсолютно всі поверхні і всі предмети інтер'єру в приміщенні
                 включаючи, стіни, підлогу і стелю, меблі всередині та зовні.
               </p>
-              <p class="service-promo__text">
+              <p
+                class="service-promo__text"
+                data-changeable="true"
+                data-category="Прибирання після ремонту"
+                data-service="Text2"
+              >
                 Всі вологостійкі поверхні миємо спеціалізованими засобами, інші
                 очищаємо сухими методами. Окремо оцінюється поштучне очищення і
                 розстановка великої кількості побутових предметів, залишених в
                 зоні ремонту. Може включати в себе додаткові послуги.
               </p>
-              <h3 class="service-promo__subtitle">
+              <h3
+                class="service-promo__subtitle"
+                data-changeable="true"
+                data-category="Прибирання після ремонту"
+                data-service="Text3"
+              >
                 Прибирання після ремонту може включати в себе додаткові послуги!
               </h3>
-              <p class="text-bg">від 90 грн / м2</p>
+              <h3
+                class="service-promo__subtitle"
+                data-changeable="true"
+                data-category="Прибирання після ремонту"
+                data-service="Text4"
+                data-hideon="Kiev"
+              >
+                Прибирання після ремонту може включати в себе додаткові послуги!
+              </h3>
+              <p
+                class="text-bg"
+                data-changeable="true"
+                data-category="Прибирання після ремонту"
+                data-service="price"
+              >
+                від 140 грн / м2
+              </p>
             </div>
           </div>
         </div>
@@ -277,15 +322,12 @@
             <div class="row">
               <div class="col-6 col-lg-9 service-key">
                 Миття вікон після ремонту <br />
-                <span class="service-promo__subtitle"
-                  >*ціна може максимально збільшуватися на 20 грн/м2</span
-                >
               </div>
               <div
                 class="col-6 col-lg-3 service-value"
                 data-changeable="true"
-                data-category="Миття вікон після ремонту"
-                data-service="Хімчистка штор парогенератором від пилу та шкідників"
+                data-category="Прибирання після ремонту"
+                data-service="Миття вікон після ремонту"
               >
                 Від 250 грн/м2 <br />
                 з двох сторін
@@ -300,6 +342,16 @@
           <div class="row justify-content-center">
             <div class="col-9 col-lg-3">
               <button class="button" data-el="contact-button">ЗАМОВИТИ</button>
+              <a
+                class="tg-link tg-link--services"
+                href="t.me"
+                data-changeable="true"
+                data-category="Contacts"
+                data-service="TelegramMessage"
+                data-attr="href"
+                data-change-child="false"
+                >Написати в Телеграм</a
+              >
             </div>
           </div>
         </div>

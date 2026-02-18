@@ -31,22 +31,36 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-11434598489"
-    ></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MJGFHW5L");
+    </script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-11434598489");
     </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MJGFHW5L"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="app">
       <!-- Header Start -->
       <header class="header">
@@ -231,12 +245,22 @@
             <div class="col-12 col-lg-9 service-promo__info">
               <div class="service-promo__header">
                 <h2 class="section-title">Базове прибирання</h2>
-                <h3 class="service-promo__subtitle">
+                <h3
+                  class="service-promo__subtitle"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="PromoText"
+                >
                   Ретельне прибирання всього помешкання, умовно говорячи - на
                   рівні зросту співробітника.
                 </h3>
               </div>
-              <p class="service-promo__text">
+              <p
+                class="service-promo__text"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="PromoText2"
+              >
                 В рамках підтримуючого прибирання видаляємо пил і побутові
                 забруднення зі всіх горизонтальних поверхонь в квартирі,
                 пилососимо і миємо підлогу, чистимо сантехніку і ванну, миємо
@@ -253,70 +277,211 @@
         <div class="container">
           <div class="row info-row justify-content-between">
             <div class="col-12 col-lg-4 info-item">
-              <h2 class="info-item__title">У всіх кімнатах:</h2>
+              <h2
+                class="info-item__title"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="List1Title"
+              >
+                У всіх кімнатах:
+              </h2>
               <ul class="info-item__list">
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List1Item1"
+                >
                   розкладаємо речі по місцях
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List1Item2"
+                >
                   проводимо сухе та вологе прибирання всіх поверхонь ззовні
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List1Item3"
+                >
                   застеляємо або замінюємо постільну білизну (за бажанням
                   замовника)
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List1Item4"
+                >
                   знепилюємо дверні коробки, двері, ручки, вимикачі, розетки,
                   підвіконня та світильники
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List1Item5"
+                >
                   натираємо дзеркала та скляні поверхні
                 </li>
-                <li class="info-item__list-value">виносимо сміття</li>
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List1Item6"
+                  data-hideon="Vinitsa"
+                >
+                  виносимо сміття
+                </li>
               </ul>
             </div>
             <div class="col-12 col-lg-4 info-item">
-              <h2 class="info-item__title">На кухні:</h2>
+              <h2
+                class="info-item__title"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="List2Title"
+              >
+                На кухні:
+              </h2>
               <ul class="info-item__list">
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List2Item1"
+                >
                   відмиваємо всю техніку ззовні, яка знаходиться на поверхні
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List2Item2"
+                >
                   відмиваємо кухонні фасади, фартух та плиту
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List2Item3"
+                >
                   миємо холодильник, духову шафу ззовні
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List2Item4"
+                  data-hideon="Vinitsa"
+                >
                   миємо мікрохвильову піч ззовні та всередині
                 </li>
-                <li class="info-item__list-value">миємо посуд</li>
-                <li class="info-item__list-value">виносимо сміття з кухні</li>
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List2Item5"
+                  data-hideon="Vinitsa"
+                >
+                  миємо посуд
+                </li>
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List2Item6"
+                  data-hideon="Vinitsa"
+                >
+                  виносимо сміття з кухні
+                </li>
               </ul>
             </div>
             <div class="col-12 col-lg-4 info-item">
-              <h2 class="info-item__title">В ванній кімнаті:</h2>
+              <h2
+                class="info-item__title"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="List3Title"
+              >
+                В ванній кімнаті:
+              </h2>
               <ul class="info-item__list">
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List3Item1"
+                >
                   миємо ванну, душ та умивальник
                 </li>
-                <li class="info-item__list-value">натираємо змішувачі</li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List3Item2"
+                >
+                  натираємо змішувачі
+                </li>
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List3Item3"
+                >
                   робимо дезінфекцію унітазу
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List3Item4"
+                >
                   натираємо дзеркала та скляні поверхні
                 </li>
-                <li class="info-item__list-value">миємо кахель</li>
-                <li class="info-item__list-value">виносимо сміття</li>
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List3Item5"
+                  data-hideon="Vinitsa"
+                >
+                  миємо кахель
+                </li>
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="List3Item6"
+                  data-hideon="Vinitsa"
+                >
+                  виносимо сміття
+                </li>
               </ul>
             </div>
           </div>
           <div class="row info-text-row justify-content-end">
-            <p class="info-text">
+            <p
+              class="info-text"
+              data-changeable="true"
+              data-category="Базове прибирання"
+              data-service="InfoText1"
+            >
               Базове прибирання може включати в себе додаткові послуги!
             </p>
-            <p class="info-text">Час прибирання може сягати до 6 годин.</p>
+            <p
+              class="info-text"
+              data-changeable="true"
+              data-category="Базове прибирання"
+              data-service="InfoText2"
+            >
+              Час прибирання може сягати до 6 годин.
+            </p>
           </div>
         </div>
       </section>
@@ -401,12 +566,29 @@
           <div class="row price-info">
             <div class="col-10 offset-2">
               <div class="price-info-text">
-                * при наявності тварин + 200 грн
+                * при наявності тварин
+                <span
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="Домашні улюбленці"
+                  >250 грн</span
+                >
               </div>
               <div class="price-info-text">
-                **додаткова туалетна кімната від 350 грн
+                **додаткова туалетна кімната
+                <span
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="Прибрати додатковий санвузол"
+                  >250 грн</span
+                >
               </div>
-              <div class="price-info-text">
+              <div
+                class="price-info-text"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="maxPrice"
+              >
                 ***максимально збільшена сума може бути на 1500 грн, все
                 обговорюється перед початком роботи
               </div>
@@ -548,6 +730,145 @@
                 180 грн / год
               </div>
             </div>
+            <div class="row">
+              <div class="col-6 col-lg-9 service-key">
+                Помити пральну машину
+              </div>
+              <div
+                class="col-6 col-lg-3 service-value"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="Помити пральну машину"
+              >
+                180 грн / год
+              </div>
+            </div>
+            <div class="row" data-hideon="Kiev">
+              <div class="col-6 col-lg-9 service-key">
+                Помити мікрохвильовку
+              </div>
+              <div
+                class="col-6 col-lg-3 service-value"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="Помити мікрохвильовку"
+              >
+                180 грн / год
+              </div>
+            </div>
+            <div class="row" data-hideon="Kiev">
+              <div class="col-6 col-lg-9 service-key">
+                Помити холодильну камеру
+              </div>
+              <div
+                class="col-6 col-lg-3 service-value"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="Помити холодильну камеру"
+              >
+                180 грн / год
+              </div>
+            </div>
+            <div class="row" data-hideon="Kiev">
+              <div class="col-6 col-lg-9 service-key">Видалення грибка</div>
+              <div
+                class="col-6 col-lg-3 service-value"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="Видалення грибка"
+              >
+                180 грн / год
+              </div>
+            </div>
+            <div class="row" data-hideon="Kiev">
+              <div class="col-6 col-lg-9 service-key">
+                Дезінфекція мʼяких меблів
+              </div>
+              <div
+                class="col-6 col-lg-3 service-value"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="Дезінфекція мʼяких меблів"
+              >
+                180 грн / год
+              </div>
+            </div>
+            <div class="row" data-hideon="Kiev">
+              <div class="col-6 col-lg-9 service-key">
+                Знепилення гардин парогенератором + дезінфекція
+              </div>
+              <div
+                class="col-6 col-lg-3 service-value"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="Знепилення гардин парогенератором + дезінфекція"
+              >
+                180 грн / год
+              </div>
+            </div>
+            <div class="row" data-hideon="Kiev">
+              <div class="col-6 col-lg-9 service-key">
+                Зняття/прання/розвішування гардин
+              </div>
+              <div
+                class="col-6 col-lg-3 service-value"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="Зняття/прання/розвішування гардин"
+              >
+                180 грн / год
+              </div>
+            </div>
+            <div class="row" data-hideon="Kiev">
+              <div class="col-6 col-lg-9 service-key">
+                Складання/сортирування речей
+              </div>
+              <div
+                class="col-6 col-lg-3 service-value"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="Складання/сортирування речей"
+              >
+                180 грн / год
+              </div>
+            </div>
+            <div class="row" data-hideon="Kiev">
+              <div class="col-6 col-lg-9 service-key">Доставка ключів</div>
+              <div
+                class="col-6 col-lg-3 service-value"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="Доставка ключів"
+              >
+                180 грн / год
+              </div>
+            </div>
+            <div class="row" data-hideon="Kiev">
+              <div class="col-6 col-lg-9 service-key">
+                Лоток/мисочка домашньої тварини
+              </div>
+              <div
+                class="col-6 col-lg-3 service-value"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="Лоток/мисочка домашньої тварини"
+              >
+                180 грн / год
+              </div>
+            </div>
+            <div class="row" data-hideon="Kiev">
+              <div class="col-6 col-lg-9 service-key">
+                Реставрація хрому/раковини
+              </div>
+              <div
+                class="col-6 col-lg-3 service-value"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="Реставрація хрому/раковини"
+              >
+                180 грн / год
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -557,6 +878,16 @@
           <div class="row justify-content-center">
             <div class="col-9 col-lg-3">
               <button class="button" data-el="contact-button">ЗАМОВИТИ</button>
+              <a
+                class="tg-link tg-link--services"
+                href="t.me"
+                data-changeable="true"
+                data-category="Contacts"
+                data-service="TelegramMessage"
+                data-attr="href"
+                data-change-child="false"
+                >Написати в Телеграм</a
+              >
             </div>
           </div>
         </div>

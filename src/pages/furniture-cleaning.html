@@ -31,22 +31,36 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-11434598489"
-    ></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MJGFHW5L");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-11434598489");
     </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MJGFHW5L"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="app">
       <!-- Header Start -->
       <header class="header">
@@ -442,7 +456,9 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-4 service-key">Односпальний матрац дитячий</div>
+              <div class="col-4 service-key">
+                Односпальний матрац дитячий (з однієі сторони)
+              </div>
               <div class="col-4 service-image">
                 <img
                   src="/images/service-table/image-10.png"
@@ -454,7 +470,7 @@
                 class="col-4 service-value"
                 data-changeable="true"
                 data-category="Хімчистка меблів"
-                data-service="Односпальний матрац дитячий"
+                data-service="Односпальний матрац дитячий (з однієі сторони)"
               >
                 Від 800 грн
               </div>
@@ -490,13 +506,15 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-4 service-key">Двоспальний матрац</div>
+              <div class="col-4 service-key">
+                Двоспальний матрац (з однієі сторони)
+              </div>
               <div class="col-4 service-image"></div>
               <div
                 class="col-4 service-value"
                 data-changeable="true"
                 data-category="Хімчистка меблів"
-                data-service="Двоспальний матрац"
+                data-service="Двоспальний матрац (з однієі сторони)"
               >
                 Від 550 грн
               </div>
@@ -510,6 +528,16 @@
           <div class="row justify-content-center">
             <div class="col-9 col-lg-3">
               <button class="button" data-el="contact-button">ЗАМОВИТИ</button>
+              <a
+                class="tg-link tg-link--services"
+                href="t.me"
+                data-changeable="true"
+                data-category="Contacts"
+                data-service="TelegramMessage"
+                data-attr="href"
+                data-change-child="false"
+                >Написати в Телеграм</a
+              >
             </div>
           </div>
         </div>

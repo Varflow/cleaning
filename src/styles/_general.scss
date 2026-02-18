@@ -29,3 +29,37 @@
 body {
   overflow-x: hidden;
 }
+
+.tg-link {
+  display: block;
+  margin-top: 12px;
+  max-width: max-content;
+
+  position: relative;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.48px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+
+  margin-left: 2vw;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &--services {
+    display: flex;
+    justify-content: center;
+
+    margin-left: 0;
+    max-width: 100%;
+
+    color: #76a4db;
+  }
+}

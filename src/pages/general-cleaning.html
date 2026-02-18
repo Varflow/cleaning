@@ -31,22 +31,37 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-11434598489"
-    ></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MJGFHW5L");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-11434598489");
     </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MJGFHW5L"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="app">
       <!-- Header Start -->
       <header class="header">
@@ -231,11 +246,21 @@
             <div class="col-12 col-lg-9 service-promo__info">
               <div class="service-promo__header">
                 <h2 class="section-title">Генеральне прибирання</h2>
-                <h3 class="service-promo__subtitle">
+                <h3
+                  class="service-promo__subtitle"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="PromoText"
+                >
                   Глибоке очищення і відновлення.
                 </h3>
               </div>
-              <p class="service-promo__text">
+              <p
+                class="service-promo__text"
+                data-changeable="true"
+                data-category="Генеральне прибирання"
+                data-service="PromoText2"
+              >
                 При генеральному прибиранні робимо все те, що робимо при
                 стандартному, а також: рухаємо меблі і миємо в важкодоступних
                 місцях, працюємо із застарілими плямами, відмиваємо холодильник,
@@ -256,82 +281,240 @@
         <div class="container">
           <div class="row info-row justify-content-between">
             <div class="col-12 col-lg-4 info-item">
-              <h2 class="info-item__title">У всіх кімнатах:</h2>
+              <h2
+                class="info-item__title"
+                data-changeable="true"
+                data-category="Генеральне прибирання"
+                data-service="List1Title"
+              >
+                У всіх кімнатах:
+              </h2>
               <ul class="info-item__list">
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List1Item1"
+                >
                   миємо домівку від стелі до підлоги знепилюємо стелю, ніші,
                   карнизи та стіни
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List1Item2"
+                >
                   знепилюємо дверні коробки, двері, ручки вимикачі, розетки,
                   підвіконня та світильники
                 </li>
-                <li class="info-item__list-value">знімаємо павутину з стелі</li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List1Item3"
+                >
+                  знімаємо павутину з стелі
+                </li>
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List1Item4"
+                >
                   проводимо сухе та вологе прибирання всіх поверхонь ззовні та в
                   середині
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List1Item5"
+                >
                   робимо суху чистку м’яких меблів
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List1Item6"
+                >
                   застеляємо (замінюємо) постільну білизну (за бажанням
                   замовника)
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List1Item7"
+                >
                   натираємо дзеркала та скляні поверхні
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List1Item8"
+                  data-hideon="Vinitsa"
+                >
                   пилососимо, протираємо плінтуса та миємо підлогу
                 </li>
-                <li class="info-item__list-value">виносимо сміття</li>
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List1Item9"
+                  data-hideon="Vinitsa"
+                >
+                  виносимо сміття
+                </li>
               </ul>
             </div>
             <div class="col-12 col-lg-4 info-item">
-              <h2 class="info-item__title">На кухні:</h2>
+              <h2
+                class="info-item__title"
+                data-changeable="true"
+                data-category="Генеральне прибирання"
+                data-service="List2Title"
+              >
+                На кухні:
+              </h2>
               <ul class="info-item__list">
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List2Item1"
+                >
                   відмиваємо всі старі забруднення з професійними засобами та
                   технікою
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List2Item2"
+                >
                   відмиваємо кухонну техніку ззовні
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List2Item3"
+                >
                   миємо фасад, фартух та плиту
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List2Item4"
+                  data-hideon="Vinitsa"
+                >
                   відмиваємо духову шафу, мікрохвильову піч, холодильник
                 </li>
-                <li class="info-item__list-value">миємо посуд</li>
-                <li class="info-item__list-value">виносимо сміття</li>
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List2Item5"
+                  data-hideon="Vinitsa"
+                >
+                  миємо посуд
+                </li>
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List2Item6"
+                  data-hideon="Vinitsa"
+                >
+                  виносимо сміття
+                </li>
               </ul>
             </div>
             <div class="col-12 col-lg-4 info-item">
-              <h2 class="info-item__title">В ванній кімнаті:</h2>
+              <h2
+                class="info-item__title"
+                data-changeable="true"
+                data-category="Генеральне прибирання"
+                data-service="List3Title"
+              >
+                В ванній кімнаті:
+              </h2>
               <ul class="info-item__list">
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List3Item1"
+                >
                   обробляємо плитку парогенератором та натираємо її
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List3Item2"
+                >
                   відмиваємо всі старі та сильно забруднені поверхні з
                   професійними засобами та технікою
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List3Item3"
+                >
                   натираємо дзеркала та скляні поверхні
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List3Item4"
+                >
                   миємо ванну, душ, раковину, змішувачі, вентиляційні решітки
                 </li>
-                <li class="info-item__list-value">
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List3Item5"
+                >
                   робимо дезинфекцію унітазу
                 </li>
-                <li class="info-item__list-value">виносимо сміття</li>
+                <li
+                  class="info-item__list-value"
+                  data-changeable="true"
+                  data-category="Генеральне прибирання"
+                  data-service="List3Item6"
+                  data-hideon="Vinitsa"
+                >
+                  виносимо сміття
+                </li>
               </ul>
             </div>
           </div>
           <div class="row info-text-row justify-content-end">
-            <p class="info-text">Час прибирання може сягати до 10 годин.</p>
+            <p
+              class="info-text"
+              data-changeable="true"
+              data-category="Генеральне прибирання"
+              data-service="InfoText1"
+              data-hideon="Kiev"
+            >
+              Час прибирання може сягати до 10 годин.
+            </p>
+            <p
+              class="info-text"
+              data-changeable="true"
+              data-category="Генеральне прибирання"
+              data-service="InfoText2"
+            >
+              Час прибирання може сягати до 10 годин.
+            </p>
           </div>
         </div>
       </section>
@@ -424,20 +607,38 @@
             </tbody>
           </table>
 
-          <div class="row price-info">
+          <div class="row price-info" data-hideon="Kiev">
             <div class="col-10 offset-2">
               <div class="price-info-text">
-                * при наявності тварин + 200 грн
+                * при наявності тварин
+                <span
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="Домашні улюбленці"
+                  >250 грн</span
+                >
               </div>
               <div class="price-info-text">
-                **додаткова туалетна кімната від 350 грн
+                **додаткова туалетна кімната
+                <span
+                  data-changeable="true"
+                  data-category="Базове прибирання"
+                  data-service="Прибрати додатковий санвузол"
+                  >250 грн</span
+                >
               </div>
-              <div class="price-info-text">
+              <div
+                class="price-info-text"
+                data-changeable="true"
+                data-category="Базове прибирання"
+                data-service="maxPrice"
+              >
                 ***максимально збільшена сума може бути на 1500 грн, все
                 обговорюється перед початком роботи
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -467,6 +668,16 @@
           <div class="row justify-content-center">
             <div class="col-9 col-lg-3">
               <button class="button" data-el="contact-button">ЗАМОВИТИ</button>
+              <a
+                class="tg-link tg-link--services"
+                href="t.me"
+                data-changeable="true"
+                data-category="Contacts"
+                data-service="TelegramMessage"
+                data-attr="href"
+                data-change-child="false"
+                >Написати в Телеграм</a
+              >
             </div>
           </div>
         </div>

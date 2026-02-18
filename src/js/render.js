@@ -43,7 +43,23 @@ const renderValue = (elements) => {
     }
 
     if (changeChild) {
-      element.innerText = value;
+      element.innerHTML = value;
+    }
+  });
+};
+
+const hideElement = () => {
+  const elementsForHide = document.querySelectorAll("[data-hideon]");
+
+  if (!elementsForHide?.length) {
+    return;
+  }
+
+  elementsForHide.forEach((element) => {
+    const city = getCity();
+
+    if (element.dataset.hideon === city) {
+      element.style.display = "none";
     }
   });
 };
@@ -51,6 +67,7 @@ const renderValue = (elements) => {
 export const render = () => {
   const changeableElements = getChangeableElements();
 
+  hideElement();
   validateElements(changeableElements);
   renderValue(changeableElements);
 };

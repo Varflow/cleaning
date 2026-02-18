@@ -10,14 +10,27 @@ export const initContact = () => {
 
       Modal.open("contact-modal");
 
-      // const submitButton = document.querySelector('[data-el="submit-button"]');
+      const submitButton = document.querySelector('[data-el="submit-button"]');
 
-      // submitButton.addEventListener("click", () => {
-      //   const form = document.querySelector('[data-el="contact-form"]');
+      const form = document.querySelector('[data-el="contact-form"]');
 
-      //   gtag_report_conversion();
-      //   form.submit();
-      // });
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const phone = formData.get("phone");
+
+        console.log("phone", phone);
+
+        const r = dataLayer.push({
+          event: "form_send_succes",
+          phone,
+        });
+
+        console.log("SENDED TO GTM", r);
+
+        form.submit();
+      });
     });
   });
 };

@@ -31,22 +31,36 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-11434598489"
-    ></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MJGFHW5L");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "AW-11434598489");
     </script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MJGFHW5L"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="app">
       <!-- Header Start -->
       <header class="header">
@@ -242,13 +256,23 @@
                 </h3>
               </div>
               <div class="service-promo-text-block">
-                <p class="service-promo__text">
+                <p
+                  class="service-promo__text"
+                  data-changeable="true"
+                  data-category="Локальне прибирання"
+                  data-service="Text1"
+                >
                   Локальне прибирання, це вид прибирання, де саме Ви вказуєте що
                   саме потрібно прибирати. Тобто миється лише те, на що Ви
                   вказуєте або кажете «генеральне прибирання ванної кімнати або
                   кухні», і клінер вимиває повністю все, ззовні та всередині.
                 </p>
-                <p class="service-promo__text">
+                <p
+                  class="service-promo__text"
+                  data-changeable="true"
+                  data-category="Локальне прибирання"
+                  data-service="Text2"
+                >
                   Ціна такого прибирання від
                   <span class="accent">
                     <span
@@ -260,7 +284,12 @@
                   >. Мінімальне замовлення
                   <span class="accent"> 3 години </span>.
                 </p>
-                <p class="service-promo__text">
+                <p
+                  class="service-promo__text"
+                  data-changeable="true"
+                  data-category="Локальне прибирання"
+                  data-service="Text3"
+                >
                   Кожна зона рахується окремо.
                   <span class="accent"
                     >Тобто
@@ -282,7 +311,12 @@
                   >
                   - кухня.
                 </p>
-                <p class="service-promo__text">
+                <p
+                  class="service-promo__text"
+                  data-changeable="true"
+                  data-category="Локальне прибирання"
+                  data-service="Text4"
+                >
                   Клінер не відпочиває, не відходить, працює від А до Я без
                   перерв. Час записується той, в який вже клінер почав
                   працювати.
@@ -298,6 +332,16 @@
                 <button class="button" data-el="contact-button">
                   ЗАМОВИТИ
                 </button>
+                <a
+                  class="tg-link tg-link--services"
+                  href="t.me"
+                  data-changeable="true"
+                  data-category="Contacts"
+                  data-service="TelegramMessage"
+                  data-attr="href"
+                  data-change-child="false"
+                  >Написати в Телеграм</a
+                >
               </div>
             </div>
           </div>

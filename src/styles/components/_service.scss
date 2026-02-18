@@ -245,9 +245,15 @@
     }
   }
 
+  .prices-table-values.price-table-values--border {
+    border-top: 2px solid $primary-200;
+  }
+
   &-values {
     td {
-      padding-top: 18px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      // padding-top: 18px;
       padding-right: 10px;
       padding-left: 10px;
 
@@ -259,6 +265,14 @@
 
       @include mobile {
         padding-top: 8px;
+      }
+
+      .prices-table-label {
+        white-space: nowrap;
+
+        @include mobile {
+          white-space: normal;
+        }
       }
     }
   }
