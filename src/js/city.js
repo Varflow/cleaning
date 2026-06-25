@@ -36,5 +36,11 @@ const renderCurrenctCity = () => {
     return;
   }
 
-  cityAddressEl.textContent = city === "Kiev" ? "м. Київ" : "м. Вінниця";
+  if (city === "Kiev") {
+    cityAddressEl.textContent = "м. Київ";
+  } else if (city === "Odessa") {
+    cityAddressEl.textContent = "м. Одеса";
+  } else {
+    cityAddressEl.textContent = "м. Вінниця";
+  }
 };
